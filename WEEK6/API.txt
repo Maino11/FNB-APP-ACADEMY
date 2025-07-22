@@ -1,0 +1,33 @@
+IT varsity API - https://mysite.itvarsity.org/api/ContactBook
+
+Methods:
+get-contacts
+ - Parameter - none or a contact id
+ - Return : JSON array
+		All contacts if no parameter is provided
+		1 Contat if an ID is provided.
+
+add-contact
+ -Paramters: FormData object
+ -Return: 
+	Text: "1" if succesful
+	Text: An error message if not succesful
+
+edit-contact:
+ -Parameter : FormData object with an ID
+ -Return : 
+	Text: "1" if succesful
+	Text: An error message if not succesful
+
+delete-contact
+ -Parameters: id
+ -Return:
+	Text: "1" if succesful
+	Text: An error if not succesful
+
+How an JSON array looks:
+{
+	"id":"3",
+	"firstname":"Tony",
+	"lastname": "Stark"
+}
